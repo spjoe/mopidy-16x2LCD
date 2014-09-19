@@ -2,3 +2,5 @@ include LICENSE
 include MANIFEST.in
 include README.rst
 include mopidy_16x2LCD/*.py
+include mopidy_16x2LCD/ext.conf
+include mopidy_16x2LCD/AdafruitCharLCD
