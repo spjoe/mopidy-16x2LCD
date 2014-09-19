@@ -1,13 +1,8 @@
 import pykka
 import logging
-import tempfile
-
-from time import sleep
-
-from mopidy.core import PlaybackState
-from mopidy.utils import process
 
 logger = logging.getLogger('mopidy_16x2LCD')
+
 
 class LCDFrontend(pykka.ThreadingActor):
     def __init__(self, config, core):
@@ -18,8 +13,7 @@ class LCDFrontend(pykka.ThreadingActor):
         logger.info('16x2LCD started')
 
     def on_stop(self):
-        logger.info('16x2LCD stopped')        
+        logger.info('16x2LCD stopped')
 
     def on_failure(self):
         logger.warning('16x2LCD failing')
-
