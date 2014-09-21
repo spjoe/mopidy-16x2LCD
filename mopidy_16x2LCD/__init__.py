@@ -22,7 +22,7 @@ class Extension(ext.Extension):
     def setup(self, registry):
         from .actor import LCDFrontend
         registry.add('frontend', LCDFrontend)
-        
+
     def get_default_config(self):
         conf_file = os.path.join(os.path.dirname(__file__), 'ext.conf')
         return config.read(conf_file)
