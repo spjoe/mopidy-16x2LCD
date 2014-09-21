@@ -56,7 +56,7 @@ class LCDFrontend(pykka.ThreadingActor, CoreListener):
         self.displayRenderer.setState("stopped")
 
     def updateTrackInfo(self, track):
-        logger.info('updateTrackInfo: ' + str(track))
+        logger.debug('updateTrackInfo: ' + str(track))
         try:
             trackinfo = ""
             if track is not None:
@@ -66,7 +66,7 @@ class LCDFrontend(pykka.ThreadingActor, CoreListener):
                     trackinfo = trackinfo + " - " + next(iter(track.artists)).name
                 if track.album is not None and track.album.name is not None:
                     trackinfo = trackinfo + " - " + track.album.name
-            logger.info('trackinfo: ' + trackinfo)
+            logger.debug('trackinfo: ' + trackinfo)
             self.displayRenderer.setTrackInfo(trackinfo)
         except Exception as e:
             logger.warning("Exception: " + str(e))
