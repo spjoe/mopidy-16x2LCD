@@ -38,7 +38,7 @@ setup(
         ],
     },
     classifiers=[
-        'Environment :: rasperrypi',
+        'Environment :: No Input/Output (Daemon)',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
