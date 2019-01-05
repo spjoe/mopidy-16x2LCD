@@ -1,5 +1,5 @@
 ****************************
-Mopidy-IRControl
+Mopidy-16x2LCD
 ****************************
 
 .. image:: https://img.shields.io/pypi/v/Mopidy-16x2LCD.svg
@@ -35,6 +35,17 @@ Project resources
 - `Source code <https://github.com/spjoe/mopidy-16x2LCD>`_
 - `Issue tracker <https://github.com/spjoe/mopidy-16x2LCD/issues>`_
 - `Download development snapshot <https://github.com/spjoe/mopidy-16x2LCD/tarball/master#egg=Mopidy-16x2LCD-dev>`_
+
+16x2LCD In Action
+=================
+
+Mopidy is currently playing John Lennon - Imagine
+
+.. image:: /doc/lcd.jpg?raw=true
+
+In the top line name, artist and album of the currently played track is shown. This info is reiteratively scrolled from right to left.
+In the bottom left the current state of the playback or state of mopidy is shown. This can be playing, paused, stopped, "M Started", "M Stopped" or "M Failed".
+On the right bottom the current sound volume level in percent is shown.
 
 
 Changelog
